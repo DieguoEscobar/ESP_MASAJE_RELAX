@@ -62,17 +62,19 @@ h2 {
 }
 
 .caja-texto {
-	display: flex;
+	display:block;
 	align-items: left;
 	width: 80%;
 	margin: 1vw auto; /* Espaciado responsive y centrado horizontalmente */
 	text-align: justify;
+	line-height: 2vw;
 }
 
 .caja-texto em {
 	font-style: italic;
-	font-size: 1vw;
-	margin-right: 3vw; /* Espaciado entre texto y margen derecho responsive */
+	font-size: 2vw;
+	margin-right: 1vw; /* Espaciado entre texto y margen derecho responsive */
+	
 }
 
 .WhatS {
