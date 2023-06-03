@@ -71,7 +71,7 @@ h2 {
 
 .caja-texto em {
 	font-style: italic;
-	font-size: 2vw;
+	font-size: 1vw;
 	margin-right: 3vw; /* Espaciado entre texto y margen derecho responsive */
 }
 
