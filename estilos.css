@@ -78,7 +78,6 @@ h2 {
 }
 
 .caja-texto em {
-    font-style: italic;
     font-size: 1.5vw;
     margin-left: -5vw;
 }
@@ -86,13 +85,12 @@ h2 {
 .caja-texto1 {
     width: 138%;
     text-align: justify;
-    line-height: 1.5vw;
+    line-height: 1vw;
     margin-left: -10vw;
 }
 
 .caja-texto1 em {
-    font-style: italic;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     width: 80%;
 }
 
@@ -127,5 +125,5 @@ h2 {
 }
 
 .parpadeo {
-    animation: parpadeo 4s infinite;
+    animation: parpadeo 6s infinite;
 }
