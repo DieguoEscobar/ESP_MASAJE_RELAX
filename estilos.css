@@ -77,20 +77,20 @@ h2 {
     line-height: 2vw;
 }
 
-.caja-texto p {
-    font-size: 2vw;
+.caja-texto em {
+    font-size: 1vw;
     margin-left: -5vw;
 }
 
 .caja-texto1 {
-    width: 210%;
+    width: 138%;
     text-align: justify;
-    line-height: 2vw;
-    margin-left: -20vw;
+    line-height: 1vw;
+    margin-left: -10vw;
 }
 
-.caja-texto1 p {
-    font-size: 2vw;
+.caja-texto1 em {
+    font-size: 1vw;
     width: 80%;
 }
 
