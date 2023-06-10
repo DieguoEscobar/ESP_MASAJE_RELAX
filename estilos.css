@@ -1,3 +1,8 @@
+head {
+    background-color: #ffffff;
+    /* Otros estilos de tu encabezado */
+  }
+  
 body {
     background-color: #f0f8ff;
     color: #704F56;
@@ -15,9 +20,14 @@ h1 {
     background-position: -2% 95%;
     background-size: 100% 0.5vw;
     background-repeat: no-repeat;
+    background-color: #f0f8ff;
     padding-bottom: 1vw;
     text-align: left;
     margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 h2 {
@@ -31,7 +41,7 @@ h2 {
     background-repeat: no-repeat;
     padding-bottom: 1vw;
     display: flex;
-    position: relative;
+  
 }
 
 .container {
@@ -64,9 +74,9 @@ h2 {
 }
 
 #imagen2 {
-    transform: rotate(270deg);
-    margin-top: -4vw;
+    margin-top: 1vw;
     width: 22vw;
+    height: auto;
 }
 #imagen3 {
     width: 22vw;
@@ -104,6 +114,11 @@ h2 {
     font-size: 1.5vw;
     margin-left: -5vw;
 }
+.parrafo {
+    columns: 1;
+    font-size: 1.7vw;
+    margin-left: -5vw; 
+}
 
 .WhatS {
     position: fixed;
@@ -113,7 +128,7 @@ h2 {
 }
 
 .WhatS img {
-    width: 10vw;
+    width: 8vw;
     height: auto;
     margin: 0 1vw;
 }
