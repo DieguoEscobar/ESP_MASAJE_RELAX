@@ -71,6 +71,7 @@ h2 {
     height: auto;
     margin: 0.5vw;
     margin-left: -10vw;
+   margin-top: 7vw;
 }
 
 #imagen2 {
@@ -95,13 +96,15 @@ h2 {
 .caja-texto1 {
     width: 138%;
     text-align: justify;
-    line-height: 1vw;
+    line-height: 2vw;
     margin-left: -10vw;
+    margin-top: -1.5vw;
 }
 
-.caja-texto1 em {
-    font-size: 1vw;
-    width: 80%;
+.caja-texto1 p {
+    font-size: 1.5vw;
+    width: 100%;
+    font-style: italic;
 }
 
 .lista1 {
@@ -134,11 +137,11 @@ h2 {
 }
 
 @keyframes parpadeo {
-    0% { opacity: 1; }
-    50% { opacity: 0.15; }
-    100% { opacity: 1; }
+    0% { opacity: 0; }
+   /* 50% { opacity: 0.15; }
+    100% { opacity: 1; }*/
 }
 
 .parpadeo {
-    animation: parpadeo 6s infinite;
+    animation: parpadeo 10s infinite;
 }
