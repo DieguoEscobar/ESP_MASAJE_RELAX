@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="estilos.css"> 
     <h1>ESP Masaje Relax</h1>
 </head>
-<body>
+<body onload="ocultar()" onload="ocultar1()" onload="ocultar2()" onload="ocultar3()">
     <div class="container">
         <div class="img-container">
             <img src="images/img_1.jpg" class="imagen1">
@@ -14,92 +14,97 @@
         </div>
     </div>
 
-    <h2><img src="images/trebol.png" class="Trebol">Masajes Reductores</h2>
-    <div class="container">
-        <div class="img-container">
-            <img src="images/Img_7_Reductor.jpg" class="imagen">
+    <h2 class="SeccionMasaje"><img src="images/trebol.png" class="Trebol" onclick="mostrar()"> Masajes Reductores<img src="images/trebol.png" class="Trebol"><img src="images/img_10_Flecha.png" class="flechaDown" id="FlechaReductor"></h2>
+        <section class="seccion" id="masajes-reductores">
+         <div class="container">
+            <div class="img-container">
+                <img src="images/Img_7_Reductor.jpg" class="imagen">
+            </div>
+            <div class="caja-texto">
+                <p class="parrafo"> Tenemos para ti masajes reductores con estas técnicas
+                    <ul class="lista1">
+                        <li class="li">Yesoterapia</li>
+                        <li class="li">Termo-lipo reductor</li>
+                        <li class="li">Masoterapia</li>
+                        <li class="li">Maderoterapia</li>
+                        <li class="li">Mesoterapia</li>
+                        <li class="li">Vendas frías</li>
+                        <li class="li">Vancunterapia</li>
+                        <li class="li">Shou Noren</li>
+                        <li class="li">SLLM MUD</li>
+                        <li class="li">Preparación de novias</li>
+                        <li class="li">Baño de luna</li>
+                        <li class="li">Chocolaterapia</li>
+                        <li class="li">Baño de sol</li>
+                    </ul>
+                </p>
+            </div>
         </div>
-        <div class="caja-texto">
-            <p class="parrafo"> Tenemos para ti masajes reductores con estas técnicas
-                <ul class="lista1">
-                    <li class="li">Yesoterapia</li>
-                    <li class="li">Termo-lipo reductor</li>
-                    <li class="li">Masoterapia</li>
-                    <li class="li">Maderoterapia</li>
-                    <li class="li">Mesoterapia</li>
-                    <li class="li">Vendas frías</li>
-                    <li class="li">Vancunterapia</li>
-                    <li class="li">Shou Noren</li>
-                    <li class="li">SLLM MUD</li>
-                    <li class="li">Preparación de novias</li>
-                    <li class="li">Baño de luna</li>
-                    <li class="li">Chocolaterapia</li>
-                    <li class="li">Baño de sol</li>
-                </ul>
-            </p>
+    </section>
+    <h2 class="SeccionMasaje"><img src="images/trebol.png" class="Trebol">Masajes Relajantes<img src="images/trebol.png" class="Trebol"><img src="images/img_10_Flecha.png" class="flechaDown" id="FlechaRelajante"></h2>
+    <section class="seccion" id="masajes-relajantes">
+        <div class="container">
+            <div class="img-container">
+                <img src="images/Img_8_Relajante.jpg" class="imagen" id="imagen2">
+            </div>
+            <div class="caja-texto">
+                <p class="parrafo"> Técnicas variadas en masajes: 
+                    <ul class="lista2">
+                        <li class="li"> Descontracturantes </li>
+                        <li class="li"> Terapéuticos </li>
+                        <li class="li"> Sanadores </li>
+                    </ul>
+                </p> 
+                <img src="images/piedras.jpg" class="piedras">
+            </div>
         </div>
-    </div>
-
-    <h2><img src="images/trebol.png" class="Trebol">Masajes Relajantes</h2>
-    <div class="container">
-        <div class="img-container">
-            <img src="images/Img_8_Relajante.jpg" class="imagen" id="imagen2">
+    </section>
+    <h2 class="SeccionMasaje"><img src="images/trebol.png" class="Trebol">Masajes Faciales<img src="images/trebol.png" class="Trebol"><img src="images/img_10_Flecha.png" class="flechaDown" id="FlechaFacial"></h2>
+        <section class="seccion" id="masajes-faciales">
+         <div class="container">
+            <div class="img-container">
+                <img src="images/Img_6_Facial.jpg" class="imagen" id="imagen3">
+            </div>
+            <div class="caja-texto">
+                <p class="parrafo">Tenemos las siguientes técnicas: 
+                    <ul class="lista2">
+                        <li class="li">Refrescante facial </li>
+                        <li class="li">Rejuvenecimiento facial</li>
+                        <li class="li">Limpieza facial profunda</li>
+                        <li class="li">Limpieza facial sencilla</li>
+                        <li class="li"> Parafina facial</li>
+                        <li class="li">Yeso facial</li>
+                        <li class="li">Porcelanización egipcia</li>
+                        <li class="li">Mejoramiento del aspecto de la piel</li>
+                    </ul>
+                </p>
+            </div>
         </div>
-        <div class="caja-texto">
-            <p class="parrafo"> Técnicas variadas en masajes: 
-                <ul class="lista2">
-                    <li class="li"> Descontracturantes </li>
-                    <li class="li"> Terapéuticos </li>
-                    <li class="li"> Sanadores </li>
-                </ul>
-            </p> 
+    </section>
+    <h2 class="SeccionMasaje"><img src="images/trebol.png" class="Trebol">Terapias de Moldeamiento Corporal<img src="images/trebol.png" class="Trebol"><img src="images/img_10_Flecha.png" class="flechaDown" id="FlechaMoldedor"></h2>
+    <section class="seccion" id="masajes-moldeadores">
+        <div class="container">
+            <div class="img-container">
+                <img src="images/Img_9_Aumento.jpg" class="imagen">
+            </div>
+            <div class="caja-texto">
+                <p class="parrafo"> Contamos con algunas terapias de:
+                    <ul class="lista2">
+                        <li class="li">Anticelulítis</li>
+                        <li class="li">Activación linfática</li>                    
+                        <li class="li">Mejoramiento de la circulación</li>
+                        <li class="li">Moldeamiento y reducción de medidas</li>
+                        <li class="li">Post operatorios</li>
+                    </ul> 
+                </p>
+            </div>
         </div>
-    </div>
-    
-    <h2><img src="images/trebol.png" class="Trebol">Masajes Faciales</h2>
-    <div class="container">
-        <div class="img-container">
-            <img src="images/Img_6_Facial.jpg" class="imagen" id="imagen3">
+    </section>
+        <div class="WhatS">
+            <a href="https://api.whatsapp.com/send?phone=573143595617" target="_blank">
+                <img src="images/Img_4_whatsapp.png"  alt="Abrir chat de WhatsApp" class="parpadeo">
+            </a>
         </div>
-        <div class="caja-texto">
-            <p class="parrafo">Tenemos las siguientes técnicas: 
-                <ul class="lista2">
-                    <li class="li">Refrescante facial </li>
-                    <li class="li">Rejuvenecimiento facial</li>
-                    <li class="li">Limpieza facial profunda</li>
-                    <li class="li">Limpieza facial sencilla</li>
-                    <li class="li"> Parafina facial</li>
-                    <li class="li">Yeso facial</li>
-                    <li class="li">Porcelanización egipcia</li>
-                    <li class="li">Mejoramiento del aspecto de la piel</li>
-                </ul>
-            </p>
-        </div>
-    </div>
-
-    <h2><img src="images/trebol.png" class="Trebol"><b>Terapias de Moldeamiento Corporal</b></h2>
-    <div class="container">
-        <div class="img-container">
-            <img src="images/Img_9_Aumento.jpg" class="imagen">
-        </div>
-        <div class="caja-texto">
-            <p class="parrafo"> Contamos con algunas terapias de:
-                <ul class="lista2">
-                    <li class="li">Anticelulítis</li>
-                    <li class="li">Activación linfática</li>                    
-                    <li class="li">Mejoramiento de la circulación</li>
-                    <li class="li">Moldeamiento y reducción de medidas</li>
-                    <li class="li">Post operatorios</li>
-                </ul> 
-            </p>
-        </div>
-    </div>
-
-    <div class="WhatS">
-        <a href="https://api.whatsapp.com/send?phone=573143595617" target="_blank">
-            <img src="images/Img_4_whatsapp.png"  alt="Abrir chat de WhatsApp" class="parpadeo">
-        </a>
-    </div>
 
     <script src="codigo.js"></script>
 </body>
