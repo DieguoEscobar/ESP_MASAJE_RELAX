@@ -70,7 +70,7 @@ h2 {
     height: auto;
     margin: 0.5vw;
     margin-left: -10vw;
-   margin-top: 7vw;
+    margin-top: 7vw;
 }
 
 #imagen2 {
@@ -131,9 +131,9 @@ h2 {
 }
 
 .WhatS img {
-    width: 8vw;
+    width: 6vw;
     height: auto;
-    margin: 0 1vw;
+    margin: 5vw 1vw;
 }
 
 @keyframes parpadeo {
@@ -164,12 +164,17 @@ h2 {
     align-items: left;
 }
 
-.flechaDown{
+.flecha{
     width: 2%;
+    height: 2%;
+    margin-top: auto;
     display: flex;
 }
 
 #FlechaReductor{
+    margin-left: 26vw;
+}
+#FlechaReductorUp{
     margin-left: 26vw;
 }
 
@@ -177,9 +182,22 @@ h2 {
     margin-left: 26.6vw;
 }
 
+#FlechaRelajanteUp{
+    margin-left: 26.6vw;
+}
+
 #FlechaFacial{
     margin-left: 29vw;
 }
-#FlechaMoldedor{
-    margin-left: 8vw;
+
+#FlechaFacialUp{
+    margin-left: 29vw;
+}
+
+#FlechaMoldeador{
+    margin-left: 8.5vw;
+}
+
+#FlechaMoldeadorUp{
+    margin-left: 8.5vw;
 }
