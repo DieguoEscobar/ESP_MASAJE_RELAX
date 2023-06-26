@@ -6,15 +6,19 @@
 </head>
 <body onload="ocultar()">
     <div class="container">
-        <div class="img-container">
-            <img src="images/img_1.jpg" class="imagen1">
+        <div class="img-container" id="image-container">
+            <img src="images/img_1.jpg" class="imagen-1">
+            <img src="images/img_2.jpg" class="imagen-2">
+            <img src="Images/img_3.jpg" class="imagen-3">
+
             <div class="caja-texto1">
-                <p>Regálate un momento de paz y belleza en nuestro spa, donde podrás disfrutar de nuestros masajes faciales para rejuvenecer tu piel, masajes reductores para moldear tu cuerpo y masajes relajantes para liberar el estrés. Descubre una experiencia única de bienestar y renueva tu cuerpo y mente en este lugar lleno de tranquilidad.</p>
             </div>
         </div>
     </div>
-
-    <h2 class="SeccionMasaje"><img src="images/trebol.png" class="Trebol" onclick="mostrar()"> Masajes Reductores<img src="images/trebol.png" class="Trebol"><img src="images/img_10_FlechaDown.png" class="flecha" id="FlechaReductor" onclick="mostrar1()"><img src="images/img_10_FlechaUp.png" class="flecha" id="FlechaReductorUp" onclick="ocultar1()"></h2>
+    <div class="caja-texto2">
+        <p>Regálate un momento de paz y belleza en nuestro spa, donde podrás disfrutar de nuestros masajes faciales para rejuvenecer tu piel, masajes reductores para moldear tu cuerpo y masajes relajantes para liberar el estrés. Descubre una experiencia única de bienestar y renueva tu cuerpo y mente en este lugar lleno de tranquilidad.</p>
+    </div>
+    <h2 class="SeccionMasaje" id="modReductores"><img src="images/trebol.png" class="Trebol" onclick="mostrar()"> Masajes Reductores<img src="images/trebol.png" class="Trebol"><img src="images/img_10_FlechaDown.png" class="flecha" id="FlechaReductor" onclick="mostrar1()"><img src="images/img_10_FlechaUp.png" class="flecha" id="FlechaReductorUp" onclick="ocultar1()"></h2>
         <section class="seccion" id="masajes-reductores">
          <div class="container">
             <div class="img-container">

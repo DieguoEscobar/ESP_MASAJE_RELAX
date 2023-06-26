@@ -59,3 +59,15 @@ function ocultar4(){
     document.getElementById("FlechaMoldeador").style.display="block";
     document.getElementById("FlechaMoldeadorUp").style.display="none";
 }
+
+var images = document.querySelectorAll('#image-container img');
+var currentImageIndex = 0;
+
+setInterval(function() {
+    images[currentImageIndex].style.opacity = '0';
+    currentImageIndex++;
+    if (currentImageIndex == images.length) {
+        currentImageIndex = 0;
+    }
+    images[currentImageIndex].style.opacity = '1';
+}, 3000);
