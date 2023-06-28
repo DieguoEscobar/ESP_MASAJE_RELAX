@@ -2,7 +2,11 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="estilos.css"> 
-    <h1>ESP Masaje Relax</h1>
+    <h1>ESP Masaje Relax 
+        <button class="botonHistoria" id="botonHistoria" onclick="Historia()">¿Quiénes somos?</button>
+        <button class="botonInicio" id="botonInicio" onclick="Inicio()">Inicio</button>
+    </h1>
+
 </head>
 <body onload="ocultar()">
     <div class="container">
@@ -16,16 +20,23 @@
         </div>
     </div>
     <div class="caja-texto2">
-        <p>Regálate un momento de paz y belleza en nuestro spa, donde podrás disfrutar de nuestros masajes faciales para rejuvenecer tu piel, masajes reductores para moldear tu cuerpo y masajes relajantes para liberar el estrés. Descubre una experiencia única de bienestar y renueva tu cuerpo y mente en este lugar lleno de tranquilidad.</p>
+        <p>Regálate un momento de paz y belleza en nuestro spa, 
+           donde podrás disfrutar de nuestros masajes faciales 
+           para rejuvenecer tu piel, masajes reductores para moldear 
+           tu cuerpo y masajes relajantes para liberar el estrés.
+           Descubre una experiencia única de bienestar y renueva tu 
+           cuerpo y mente en este lugar lleno de tranquilidad.
+        </p>
     </div>
-    <h2 class="SeccionMasaje" id="modReductores"><img src="images/trebol.png" class="Trebol" onclick="mostrar()"> Masajes Reductores<img src="images/trebol.png" class="Trebol"><img src="images/img_10_FlechaDown.png" class="flecha" id="FlechaReductor" onclick="mostrar1()"><img src="images/img_10_FlechaUp.png" class="flecha" id="FlechaReductorUp" onclick="ocultar1()"></h2>
+    <h2 class="SeccionMasaje" id="modReductores"  onclick="mostrar1()"><img src="images/trebol.png" class="Trebol">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Masajes Reductores&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/trebol.png" class="Trebol"></h2>
+    <h2 class="SeccionMasaje" id="modReductores1" onclick="ocultar1()"><img src="images/trebol.png" class="Trebol">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Masajes Reductores&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/trebol.png" class="Trebol"></h2>
         <section class="seccion" id="masajes-reductores">
          <div class="container">
             <div class="img-container">
                 <img src="images/Img_7_Reductor.jpg" class="imagen">
             </div>
             <div class="caja-texto">
-                <p class="parrafo"> Tenemos para ti masajes reductores con estas técnicas
+                <p class="parrafo" id="parrafoReductor"> Tenemos para ti masajes reductores con estas técnicas
                     <ul class="lista1">
                         <li class="li">Yesoterapia</li>
                         <li class="li">Termo-lipo reductor</li>
@@ -45,7 +56,8 @@
             </div>
         </div>
     </section>
-    <h2 class="SeccionMasaje"><img src="images/trebol.png" class="Trebol">Masajes Relajantes<img src="images/trebol.png" class="Trebol"><img src="images/img_10_FlechaDown.png" class="flecha" id="FlechaRelajante" onclick="mostrar2()"><img src="images/img_10_FlechaUp.png" class="flecha" id="FlechaRelajanteUp" onclick="ocultar2()"></h2>
+    <h2 class="SeccionMasaje" id="modRelajantes"  onclick="mostrar2()"><img src="images/trebol.png" class="Trebol">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Masajes Relajantes&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/trebol.png" class="Trebol"></h2>
+    <h2 class="SeccionMasaje" id="modRelajantes1" onclick="ocultar2()"><img src="images/trebol.png" class="Trebol">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Masajes Relajantes&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/trebol.png" class="Trebol"></h2>
     <section class="seccion" id="masajes-relajantes">
         <div class="container">
             <div class="img-container">
@@ -63,8 +75,9 @@
             </div>
         </div>
     </section>
-    <h2 class="SeccionMasaje"><img src="images/trebol.png" class="Trebol">Terapias   Faciales  <img src="images/trebol.png" class="Trebol"><img src="images/img_10_FlechaDown.png" class="flecha" id="FlechaFacial" onclick="mostrar3()"><img src="images/img_10_FlechaUp.png" class="flecha" id="FlechaFacialUp" onclick="ocultar3()"></h2>
-        <section class="seccion" id="masajes-faciales">
+    <h2 class="SeccionMasaje" id="modFaciales"  onclick="mostrar3()"><img src="images/trebol.png" class="Trebol">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terapias Faciales&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/trebol.png" class="Trebol"></h2>
+    <h2 class="SeccionMasaje" id="modFaciales1" onclick="ocultar3()"><img src="images/trebol.png" class="Trebol">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terapias Faciales&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/trebol.png" class="Trebol"></h2>
+    <section class="seccion" id="masajes-faciales">
          <div class="container">
             <div class="img-container">
                 <img src="images/Img_6_Facial.jpg" class="imagen" id="imagen3">
@@ -85,8 +98,12 @@
             </div>
         </div>
     </section>
-    <h2 class="SeccionMasaje"><img src="images/trebol.png" class="Trebol">Terapias de Moldeamiento Corporal<img src="images/trebol.png" class="Trebol"><img src="images/img_10_FlechaDown.png" class="flecha" id="FlechaMoldeador" onclick="mostrar4()"><img src="images/img_10_FlechaUp.png" class="flecha" id="FlechaMoldeadorUp" onclick="ocultar4()"></h2>
-    <section class="seccion" id="masajes-moldeadores">
+    <div class="SeccionMasaje" id="lineaMoldeadores">
+        <h2 id="modMoldeadores"  onclick="mostrar4()"><img src="images/trebol.png" class="Trebol">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Terapias de Moldeamiento Corporal &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/trebol.png" class="Trebol"><h2>
+        <h2 id="modMoldeadores1" onclick="ocultar4()"><img src="images/trebol.png" class="Trebol">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Terapias de Moldeamiento Corporal &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/trebol.png" class="Trebol"><h2>   
+    </div>
+
+        <section class="seccion" id="masajes-moldeadores">
         <div class="container">
             <div class="img-container">
                 <img src="images/Img_9_Aumento.jpg" class="imagen">
@@ -112,4 +129,5 @@
 
     <script src="codigo.js"></script>
 </body>
+
 </html>
