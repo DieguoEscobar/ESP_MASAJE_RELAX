@@ -41,6 +41,7 @@ h2 {
     background-repeat: no-repeat;
     padding-bottom: 0.5vw;
     display: flex;
+    cursor: pointer;
 }
 
 
@@ -284,4 +285,17 @@ h2 {
 
  .botonInicio:hover {
     color: green; /* Color de texto al pasar el cursor por encima */
+}
+
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#bocina {
+    width: 3vw;
+    animation: blink 2s infinite;
+    cursor: pointer;
 }

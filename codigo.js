@@ -86,3 +86,16 @@ function Inicio(){
     window.location.href = 'Index.html';
     
 }
+window.addEventListener('DOMContentLoaded', function() {
+    var bocina = document.getElementById('bocina');
+    var audio = document.getElementById('audio');
+
+    bocina.addEventListener('click', function() {
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+            audio.currentTime = 0; // Reiniciar el audio al pausarlo
+        }
+    });
+});
